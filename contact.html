@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="shortcut icon" href="https://api.logoisus.com/wm/6428ace94458fdab4f1d6f23?watermark=2&height=600&width=600" type="image/x-icon">
+    <style>
+        /* styles.css */
+body {
+    font-family: Montserrat;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: black;
+    color: #fff;
+    text-align: center;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 36px;
+}
+
+h2 {
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+.contact-info,
+.visit-store,
+.online-support {
+    margin-bottom: 40px;
+}
+
+.contact-info p,
+.visit-store p,
+.online-support p 
+
+{
+    margin: 10px 0;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: black;
+    color: #fff;
+    margin-top: 10rem;
+    font-size: large;
+    font-family: Montserrat;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+.error-message {
+    color: red;
+    font-size: 0.8em;
+}
+
+    </style>
+</head>
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <header>
+        <div class="menu-bar">
+            <nav class="navbar navbar-expand-lg navbar-dark ">
+                <a class="navbar-brand" href="index.html">Electronic Shop</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+                </div>
+            </nav>            
+        </div>
+    </header>
+    <div class="container">
+        <section class="contact-info">
+            <h2>Contact Information</h2>
+            <p><strong>Customer Support Hotline:</strong> <a href="tel:+7-777-899-5536">+7 777 899 5536</a></p>
+            <p><strong>Email:</strong> <a href="mailto:220238@astanait.edu.kz">220238@astanait.edu.kz</a></p>
+        </section>
+        <section class="visit-store">
+            <h2>Visit Our Store</h2>
+            <p><strong>Store Address:</strong> Turkestan 14A, Astana</p>
+            <p><strong>Store Hours:</strong> 08:00-20:00</p>
+        </section>
+        <section class="online-support">
+            <h2>Online Support</h2>
+            <p><strong>Contact Form:</strong></p> 
+                <div class="modal" tabindex="-1" id="modalId">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title">Contact us</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <form id="contact-form">
+                                    <div class="mb-3">
+                                        <label for="name" class="form-label">Name</label>
+                                        <input type="text" class="form-control" id="name" name="name" required>
+                                        <span id="name-error" class="error-message"></span>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="email" class="form-label">Email</label>
+                                        <input type="email" class="form-control" id="email" name="email" required>
+                                        <span id="email-error" class="error-message"></span>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="problem" class="form-label">Write your message</label>
+                                        <textarea class="form-control" id="problem" name="problem" required></textarea>
+                                        <span id="problem-error" class="error-message"></span>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary">Submit</button>
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalId">Contact</button>
+        </section>
+    </div>
+    
+    <footer>
+        <p>&copy; Copyright by Ayan Kenzhebay</p>
+    </footer>
+    <script src="js/index.js"></script>
+</body>

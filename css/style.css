@@ -1,0 +1,197 @@
+.card-groups{
+    display: flex;
+}
+html{
+    font-family: 'Montserrat', sans-serif;
+    scroll-behavior: smooth;
+
+}
+body{
+    background-color:#fff;
+
+}
+header{
+    background-color:black;
+    font-family: Montserrat;
+}
+
+.category-card {
+    border: 1px solid #ccc;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.category-card img {
+    max-width: 100%;
+    height: auto;
+}
+
+.category-card h3 {
+    margin-top: 10px;
+}
+
+.category-card a {
+    display: block;
+    margin-top: 15px;
+}
+h2{
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+.category{
+    margin-bottom: 1rem;;
+}
+.products {
+    padding: 10px;
+    background-color: #f5f5f5;
+}
+
+.card{
+    padding: 0.5rem;
+    height: 410px;
+}
+.card-img-top {
+    max-width: 250px;
+    max-height: 250px;
+}
+.card-title {
+    font-size: 16px;
+}
+
+.card-text {
+    font-size: 14px;
+}  
+.smartphones{
+    padding: 1rem;
+}
+.laptops{
+    padding: 1rem;
+}
+.household{
+    padding: 1rem;
+}
+footer{
+    color: white;
+    background-color: black;
+    text-align: center;
+    font-size: large;
+    padding:3px;
+    font-family: Montserrat; 
+}
+
+#todo-container {
+    width: 300px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#todo-container ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#todo-container li {
+    margin: 5px 0;
+    background-color: #f9f9f9;
+    padding: 8px;
+    border: 1px solid #ddd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#todo-container input[type="text"] {
+    width: 60%;
+    padding: 5px;
+}
+
+#todo-container button {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+#todo-container button:hover {
+    background-color: #c0392b;
+}
+
+#todo-container input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+
+
+
+    #timer-container{
+        justify-content: center;
+        text-align: center;
+    }
+    
+
+/* Style for the accordion button */
+.accordion-button {
+    background-color: #3498db;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    transition: background-color 0.3s;
+}
+
+.accordion-button:hover {
+    background-color: #2980b9;
+}
+
+/* Style for the accordion content */
+.accordion-content {
+    display: none;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Style for the active (open) accordion button */
+.accordion-button.active {
+    background-color: #2980b9;
+}
+
+/* Style for the active (open) accordion content */
+.accordion-content.active {
+    display: block;
+}
+.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+
+}
+.tab button {
+    background-color: inherit;
+    float:none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+}
+.tab button:hover {
+    background-color: #ddd;
+}
+.tab button.active {
+    background-color: #ccc;
+}
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+
